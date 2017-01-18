@@ -1,0 +1,66 @@
+body {
+	background-image: url("http://www.planwallpaper.com/static/images/6942095-abstract-background-wallpaper.jpg");
+}
+
+#pic {
+	margin-top: 10px;
+	border: 4px solid gray;
+	border-radius: 10px;
+}
+
+h1 {
+	color: red;
+	font-size: 45px;
+	margin-top: 1%;
+	margin-left: 15%;
+}
+
+h2 {
+	color: #6677AD;
+	font-size: 35px;
+	margin-top: 1%;
+}
+
+h3 {
+	color: #6677AD;
+	font-size: 35px;
+	margin-top: 1%;
+}
+
+#a {
+	display: block;
+	background-color: #000000;
+	color: white;
+	margin-right: 25%;
+	margin-left: 25%;
+	margin-top: 2%;
+	padding: 10px;
+	padding-bottom: 30px;
+	font: 25px arial;
+	border-radius: 15px;
+	border: 2px solid;
+}
+
+#about {
+	display: block;
+	background-color: #000000;
+	color: white;
+	margin-right: 25%;
+	margin-left: 25%;
+	padding: 10px;
+	font: 25px arial;
+	border-radius: 15px;
+	border: 2px solid;
+}
+
+#b {
+	display: block;
+	background-color: #000000;
+	color: white;
+	margin-right: 25%;
+	margin-left: 25%;
+	padding: 10px;
+	font: 25px arial;
+	border-radius: 15px;
+	border: 2px solid;
+}
