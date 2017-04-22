@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp" ng-controller="indexController">
+
+	<head>
+		<title>AGRIsibo</title>
+		<link href="css/index.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/materialize/css/materialize.min.css"  media="screen,projection"/>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper">
+						<a href="#!" class="brand-logo">Logo</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="#">Home</a></li>
+							<li><a href="/users">Users</a></li>
+							<li><a href="/login">Login</a></li>
+							<li><a href="/register">Register</a></li>
+							<li><a href="/settings">Settings</a></li>
+						</ul>
+			      </div>
+			    </nav>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="container" id="top">
+				<div class="container" id="overview">
+					<h1><center>{{ title }}</center></h1>
+					 <p>AGRIsibo is an online crowdsourcing. . .</p>
+				</div>
+				<div class="container" id="sidebar">
+					<h1>Admin Announcements</h1>
+					<div ng-repeat="announcement in announcements">
+						<div class="adminnews">
+							<p class="posttitle">{{ announcement.title }}</p>
+							<p class="datetime">{{ announcement.date | date}} | {{ announcement.time | time }}</p>
+							<p class="details">{{ announcement.details }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="mainposts">
+				<a class="waves-effect waves-light btn green darken-3" href="/ask">Ask Question</a>
+
+				<div class="tab" ng-controller="indexController">
+					<button class="tablinks" onclick="openCity(event, 'featured')">Featured</button>
+					<button class="tablinks" onclick="openCity(event, 'latest')" id="defaultOpen">Latest</button>
+				</div>
+			</div>
+
+			<div id="latest" class="tabcontent">
+				<h1>Latest</h1>
+				<div ng-repeat="post in posts">
+					<div class="latestposts">
+						<p class="posttitle">{{ post.title }}</p>
+						<p class="datetime">{{ post.date | date}} | {{ post.time | time }}</p>
+						<p class="details">{{ post.details }}</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="featured" class="tabcontent">
+				<h1>Featured</h1>
+				<div ng-repeat="post in posts">
+					<div class="featuredposts">
+						<p class="question">{{ post.question }}</p>
+						<p class="qdatetime">{{ post.date | date}} | {{ post.time | time }}</p>
+						<p class="qdetails">{{ post.details }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var app = angular.module("myApp", [])
+
+			.controller("indexController",['$scope', function($scope) {
+				$scope.title = "AGRIsibo";
+			}]);
+		</script>
+		<script type="text/javascript" src="css/materialize/js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<!-- Module 		<script src="js/app.js"></script>
+		<!-- Controller 
+		<script src="js/controllers/indexController.js"></script>
+-->
+
+	</body>
+
+</html>
