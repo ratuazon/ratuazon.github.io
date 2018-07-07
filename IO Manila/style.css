@@ -1,0 +1,154 @@
+body {
+  background-color: #ebebeb;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.userLogin, .Content{
+  display: none;
+}
+
+.container {
+  margin: 0px auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.userLogin {
+  width: 20%
+}
+
+.Content {
+  width: 50%;
+}
+
+input, button {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  margin: 5px 0px;
+  width: 100%;
+  outline: none;
+  display: inline-block;
+}
+
+input:focus {
+  border: 1px solid #ababab;
+}
+
+.loginBtn {
+  background-color: #4dd850;
+  color: #fff;
+  margin-top: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.loginBtn:hover {
+  color: #4dd850;
+  border: 1px solid #4dd850;
+  background-color: inherit;
+}
+
+.signInGoogle {
+  color: #bcbcbc;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.registerBtn {
+  background-color: #e6b100;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.registerBtn:hover {
+  color: #e6b100;
+  border: 1px solid #e6b100;
+  background-color: inherit;
+}
+
+.userPhoto {
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.logoutBtn {
+  background-color: #e45c5c;
+  color: #fff;
+  margin-top: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.logoutBtn:hover {
+  color: #e45c5c;
+  border: 1px solid #e45c5c;
+  background-color: inherit;
+}
+
+.chat_history {
+  background-color: #ebebeb;
+  padding-left: 30px;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.userMessage {
+  font: inherit;
+  width: 100%;
+  resize: none;
+  height: 10%;
+  padding: 15px;
+}
+
+.sendButton {
+  background-color: #4dd850;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.sendButton:hover {
+  color: #4dd850;
+  border: 1px solid #4dd850;
+  background-color: inherit;
+}
+
+.clearButton {
+  background-color: #e45c5c;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.clearButton:hover {
+  color: #e45c5c;
+  border: 1px solid #e45c5c;
+  background-color: inherit;
+}
